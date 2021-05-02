@@ -1,0 +1,16 @@
+﻿@page "{id}"
+@model ImageUpload.Pages.ViewModel
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>View</h1>
+
+<div>
+    <h4>Image</h4>
+    <hr />
+    <img src="/Image/@Model.Image.Id" />
+    <hr />
+    <h4>Uploaded by @Model.Image.User.Email (@Model.Image.Date)</h4>
+</div>

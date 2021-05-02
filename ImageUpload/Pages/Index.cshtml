@@ -1,0 +1,12 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1>Last 10 images</h1>
+
+@foreach (var image in Model.Images)
+{
+    <img src="/Image/@image.Id" />
+}
